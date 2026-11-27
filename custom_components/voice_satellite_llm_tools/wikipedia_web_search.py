@@ -22,8 +22,8 @@ from .const import (
 
 _LOGGER = logging.getLogger(__name__)
 
-WIKIPEDIA_SEARCH_URL = "https://en.wikipedia.org/w/api.php"
-WIKIPEDIA_SUMMARY_URL = "https://en.wikipedia.org/api/rest_v1/page/summary"
+WIKIPEDIA_SEARCH_URL = "https://ja.wikipedia.org/w/api.php"
+WIKIPEDIA_SUMMARY_URL = "https://ja.wikipedia.org/api/rest_v1/page/summary"
 USER_AGENT = "HomeAssistant VoiceSatelliteCard/1.0"
 
 
@@ -33,7 +33,7 @@ class WikipediaWebSearchTool(BaseTool):
     source = "wikipedia"
     name = "search_wikipedia"
     description = (
-        "Look up a topic on Wikipedia. Returns the most relevant article's "
+        "Look up a topic on Japanese Wikipedia; use a Japanese search term when possible. Returns the most relevant article's "
         "summary and thumbnail. Use when the user asks about a topic, person, "
         "place, event, or concept."
     )
